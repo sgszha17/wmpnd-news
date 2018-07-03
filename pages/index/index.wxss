@@ -1,0 +1,73 @@
+.data-list-container .date-wrapper {
+  display: flex;
+  align-items: center;
+  font-size: 30rpx;
+  height: 250rpx;
+  margin: 0 40rpx;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.navbar{
+  flex: none;
+  display: flex;
+  background: #fff;
+}
+.navbar .item{
+  position: relative;
+  flex: auto;
+  text-align: center;
+  line-height: 80rpx;
+}
+.navbar .item.active{
+  color: #87CEFA;
+}
+.navbar .item.active:after{
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 4rpx;
+  background: #87CEFA;
+}
+.source{
+   width: 400rpx; 
+  align-self: flex-end;  
+  font-size: 20rpx;
+  color: 	#A9A9A9;
+  margin-left:80rpx;
+}
+.date{
+font-size: 20rpx;
+color: 	#A9A9A9;
+align-self: flex-end; 
+margin-left: 50rpx; 
+
+}
+.date-wrapper{
+  display: flex;
+
+}
+.content-wrapper{
+  align-self: flex-end;
+  width: 500rpx;
+  height: 250rpx;
+
+}
+.firstImage{
+  width: 240rpx;
+  margin-right: 10rpx;
+  height: 180rpx;
+}
+.title{
+  height: 100rpx;
+  width: 400rpx;
+  margin-top: 30rpx;
+  align-self: flex-end;
+}
+.foot-wrapper{
+
+  margin-top: 60rpx;
+  display: flex;
+  height: 40rpx;
+}

@@ -1,0 +1,56 @@
+<!--index.wxml-->
+<view class="navbar">
+  <text wx:for="{{navbar}}" data-idx="{{index}}" class="item" wx:key="unique" bindtap="navbarTap">{{item}}</text>
+</view>
+<view class="data-list-container " wx:key="unique" bindtap="onViewContent" data-idx="{{index}}" wx:for="{{newsList}}">
+  <view class='date-wrapper'>
+      <image class='firstImage' src='{{item.firstImage}}'></image> 
+       <!-- <view class='id'>{{item.id}}</view>   -->
+       <view class='content-wrapper'>
+          <view class='title'>{{item.title}}</view>  
+          <view class = 'foot-wrapper'>
+            <view class='date'>{{item.date}}</view>   
+            <view class='source'>{{item.source}}</view> 
+          </view> 
+        </view>
+  </view> 
+</view> 
+
+<!-- <view hidden="{{currentTab!==1}}" class='data-list-container' wx:for="{{gjList}}">
+    <view class='item-continer' bindtap=''>
+      <view class='news-item'>{{discription}}</view>  
+      <image class='arrow-icon'></image>
+    </view>
+</view> 
+<view hidden="{{currentTab!==2}}" class='data-list-container' wx:for="{{cjList}}">
+    <view class='item-continer' bindtap=''>
+      <view class='news-item'>{{discription}}</view>  
+      <image class='arrow-icon'></image>
+    </view>
+</view> 
+
+<view hidden="{{currentTab!==3}}" class='data-list-container' wx:for="{{ylList}}">
+    <view class='item-continer' bindtap=''>
+      <view class='news-item'>{{discription}}</view>  
+      <image class='arrow-icon'></image>
+    </view>
+</view> 
+<view hidden="{{currentTab!==4}}" class='data-list-container' wx:for="{{jsList}}">
+    <view class='item-continer' bindtap=''>
+      <view class='news-item'>{{discription}}</view>  
+      <image class='arrow-icon'></image>
+    </view>
+</view> 
+<view hidden="{{currentTab!==5}}" class='data-list-container' wx:for="{{tyList}}">
+    <view class='item-continer' bindtap=''>
+      <view class='news-item'>{{discription}}</view>  
+      <image class='arrow-icon'></image>
+    </view>
+</view> 
+
+<view hidden="{{currentTab!==6}}" class='data-list-container' wx:for="{{otherList}}">
+    <view class='item-continer' bindtap=''>
+      <view class='news-item'>{{discription}}</view>  
+      <image class='arrow-icon'></image>
+    </view>
+</view>  -->

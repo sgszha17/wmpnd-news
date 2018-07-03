@@ -1,0 +1,20 @@
+<view class='detail-container'>
+  <view class='head'>
+    <view class='title'>{{title}}</view>
+    <view class='title-information'>
+      <view class='date'>{{date}}</view>
+      <view class='source'>{{source}}</view>
+      <view class='readCount'>
+        <image class='eye-icon' src='/image/eye.png'></image>
+        <view class='source'>{{readCount}}</view>
+      </view>
+    </view>
+    
+  </view>
+  <view class='body'>
+    <view class="content" wx:for="{{content}}">
+    <view wx:if="{{item.type=='p'}}" class='text'>{{item.text}}</view>
+    <image wx:if="{{item.type=='image'}}" class='image' src='{{item.src}}'></image>
+    </view>
+  </view>
+</view>

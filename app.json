@@ -1,0 +1,13 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/news/news"
+  ],
+  "window":{
+    "backgroundTextStyle":"dark",
+    "navigationBarBackgroundColor": "#87CEFA",
+    "navigationBarTitleText": "News",
+    "navigationBarTextStyle":"black",
+    "enablePullDownRefresh": true
+  }
+}
