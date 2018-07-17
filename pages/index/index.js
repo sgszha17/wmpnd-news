@@ -33,7 +33,7 @@ Page({
    * 页面的初始数据
    */
   data:{
-    newsList:[],
+    newsList: [{ title: "No content", firstImage: "",date:"",source:"" }],
     discription:"",
     currentTab: 0,
     firstImage:"/image/placeholder.png",
@@ -78,8 +78,12 @@ Page({
       },
       success: res => {
         var result = res.data.result;
-        this.setList(result);
-        
+        console.log(result)
+        if(result==null){
+          this.setList(this.data.newsList);
+        }else{
+          this.setList(result);
+        }
       },
 
       

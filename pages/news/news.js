@@ -4,10 +4,11 @@ Page({
    * 页面的初始数据
    */
   data: {
-    title:"",
+    title:"Sorry Cannot Find",
     date:"",
     sourcec:"",
-    content:[],
+    firstImage: "/image/placeholder.png",
+    content: [],
     readCount:0
   },
 
@@ -33,7 +34,11 @@ Page({
       },
       success: res => {
         var result = res.data.result;
-        this.setContent(result);
+        if(result==null){
+          this.setContent(this.data);
+        }else{
+          this.setContent(result);
+        }
       },
     })
   },
